@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>675</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>121</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>FRAME</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_end">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>end</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_color">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>621</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Color Types</string>
+    </property>
+    <widget class="QRadioButton" name="radioButton_hsv">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>HSV</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_bgr">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BGR</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_lower_scale">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>211</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Lower_scale</string>
+     </property>
+     <widget class="QSlider" name="verticalSlider_lower_BH">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>22</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_lower_GS">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>40</y>
+        <width>22</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_lower_RV">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>22</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lower_BH">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lower_GS">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lower_RV">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_upper_scale">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>211</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Upper_scale</string>
+     </property>
+     <widget class="QSlider" name="verticalSlider_upper_BH">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>22</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_upper_GS">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>40</y>
+        <width>22</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_upper_RV">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>22</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_upper_BH">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_upper_GS">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_upper_RV">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_set">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>131</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>set</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_set_params">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>set_params</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_merge">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>merge</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_draw_line">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>draw_lines</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_recommend">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>311</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>                         Recommend scale
+
+ White mask - lower: (100, 100, 100) ~ (200, 200, 200)
+                  - upper:(255, 255, 255)
+
+ Yellow mask - lower: (5, 70, 70)
+                    - upper: (70, 255, 255) ~ (150, 255, 255)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>675</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

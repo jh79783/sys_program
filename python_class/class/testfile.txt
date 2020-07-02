@@ -1,0 +1,1 @@
+I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.
